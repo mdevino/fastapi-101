@@ -5,22 +5,21 @@ Just following the documentation on the [website](https://fastapi.tiangolo.com/t
 
 ## How to Run Me
 
-Having anaconda installed, install dependencies.
+Install dependencies
 
 ```
-conda env create -f env.yml
+pip -r requirements.txt
 ```
 
 
-Start server
+Start server for development
 
 ```
 uvicorn main:app --reload
 ```
 
-or, if you're on Linux
+For production
 
 ```
-chmod+x ./run.sh
-./run.sh
+uvicorn main:app
 ```
