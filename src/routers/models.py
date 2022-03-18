@@ -5,7 +5,7 @@ router = APIRouter(
   prefix="/models"
 )
 
-@router.get("/models/{model_name}")
+@router.get("/{model_name}")
 async def get_model(model_name: ModelName):
     if model_name == ModelName.alexnet:
         return {"model_name": model_name, "message": "Deep Learning FTW!"}
