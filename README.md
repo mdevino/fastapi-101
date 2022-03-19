@@ -23,3 +23,9 @@ For production
 ```
 uvicorn main:app
 ```
+
+To run tests
+
+```
+pytest
+```
